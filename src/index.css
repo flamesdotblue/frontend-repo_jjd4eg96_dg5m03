@@ -1,20 +1,32 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/moniqa');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-geist: 'Geist', system-ui, sans-serif;
-    --font-geist-mono: 'Geist Mono', monospace;
-    --font-mona: 'Mona Sans', system-ui, sans-serif;
-    --font-ibm-plex: 'IBM Plex Sans', system-ui, sans-serif;
-    --font-manrope: 'Manrope', system-ui, sans-serif;
+    --yellow: #ebdea0;
+    --red: #f54e4e;
+    --green: #01372a;
+    --border: #e6dca11a;
+    --light-gree: #2c5d4e;
+    --shadow: #01372a0d;
+    --dark-green: #002c20;
+
+    --font-sans: 'Satoshi', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
   html {
     font-family: var(--font-sans);
     font-feature-settings: "rlig" 1, "calt" 1;
+    background: var(--green);
+    color: white;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Moniqa Heading', serif;
   }
 
   body {
